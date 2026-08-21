@@ -6,9 +6,9 @@ namespace ConsoleApp
     {
         public static void RunStoreCalculator(double price, int quantity, double discountPercent, double taxPercent)
         {
-            double totalPrice = 50 * 4;
-            double discountAmount = totalPrice * 10 / 100;
-            double taxAmount = (totalPrice - discountAmount) * 8 / 100;
+            double totalPrice = price * quantity;
+            double discountAmount = totalPrice * discountPercent / 100;
+            double taxAmount = (totalPrice - discountAmount) * taxPercent / 100;
             double finalPrice = totalPrice - discountAmount + taxAmount;
 
             Console.WriteLine("Total price: " + totalPrice);
