@@ -1,0 +1,22 @@
+using System;
+
+namespace ConsoleApp {
+    public class Program {
+        public static void Main(string[] args) {
+            int orderNumber = 1001;
+            int quantity = 3;
+            long pricePerItem = 5000;
+            long totalPrice = quantity * pricePerItem;
+
+            Console.WriteLine("Order number: " + 1001);
+            Console.WriteLine("Quantity: " + 3);
+            Console.WriteLine("Price per item: " + 5000);
+            Console.WriteLine("Total price: " + 15000);
+        }
+
+        // This method is for testing. Do not change it.
+        public static void TestMain() {
+            Main(new string[0]);
+        }
+    }
+}
