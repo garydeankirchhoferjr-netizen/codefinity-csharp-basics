@@ -1,0 +1,21 @@
+using System;
+
+namespace ConsoleApp {
+    public class Program {
+        public static void Main(string[] args) {
+            // Declare a string variable for the book's title
+            string bookTitle = "The Great Gatsby";
+            // Declare a string variable for the author's name
+            string authorName = "F. Scott Fitzgerald";
+
+            // Print the book title
+            Console.WriteLine(bookTitle);
+            // Print the author's name
+            Console.WriteLine(authorName);
+        }
+
+        public static void TestMain() {
+            Main(new string[0]);
+        }
+    }
+}
