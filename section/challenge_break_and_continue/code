@@ -1,0 +1,35 @@
+using System;
+
+namespace ConsoleApp
+{
+    public class Program
+    {
+        public static void ProcessNumbers()
+        {
+            int total = 0;
+
+            for (int i = 1; i <= 10; i++)
+            {
+                if (i % 4 == 0)
+                {
+                    continue;
+                }
+
+                if (i > 8)
+                {
+                    break;
+                }
+
+                total = total + i;
+                Console.WriteLine("Number: " + i);
+            }
+
+            Console.WriteLine("Total sum: " + total);
+        }
+
+        public static void Main(string[] args)
+        {
+            ProcessNumbers();
+        }
+    }
+}
