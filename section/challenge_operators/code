@@ -4,27 +4,27 @@ namespace ConsoleApp
 {
     public class Program
     {
-        public static void RunStoreCalculator(double price, int quantity, double discountPercent, double taxPercent)
-        {
-            double totalPrice = price * quantity;
-            double discountAmount = totalPrice * discountPercent / 100;
-            double taxAmount = (totalPrice - discountAmount) * taxPercent / 100;
-            double finalPrice = totalPrice - discountAmount + taxAmount;
-
-            Console.WriteLine("Total price: " + totalPrice);
-            Console.WriteLine("Discount amount: " + discountAmount);
-            Console.WriteLine("Tax amount: " + taxAmount);
-            Console.WriteLine("Final price: " + finalPrice);
-        }
-
         public static void Main(string[] args)
         {
-            double price = 50.0;
-            int quantity = 4;
-            double discountPercent = 10.0;
-            double taxPercent = 8.0;
+            // 1. Declare an integer variable for the user's age
+            int age = 30;
 
-            RunStoreCalculator(price, quantity, discountPercent, taxPercent);
+            // 2. Declare a boolean variable for membership status
+            bool isMember = true;
+
+            // 3. Use comparison and logical operators with a ternary operator
+            // Eligible if age is 65 or older OR if the user is a member
+            string message = (age >= 65 || isMember) 
+                             ? "Eligible for discount" 
+                             : "Not eligible for discount";
+
+            // 4. Print the message
+            Console.WriteLine(message);
+        }
+
+        public static void TestMain(string[] args)
+        {
+            Main(args);
         }
     }
 }
