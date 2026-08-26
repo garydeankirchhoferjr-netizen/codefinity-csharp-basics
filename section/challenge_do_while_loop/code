@@ -1,0 +1,30 @@
+using System;
+
+namespace ConsoleApp
+{
+    public class Program
+    {
+        public static void CalculateSavings(int dailySaving, int targetAmount)
+        {
+            int totalSaved = 0;
+            int days = 0;
+
+            do
+            {
+                totalSaved = dailySaving + totalSaved;
+                days = days + 1;
+            } while (totalSaved < targetAmount);
+
+            Console.WriteLine("It took " + days + " days to reach the target.");
+            Console.WriteLine("Total saved: " + totalSaved);
+        }
+
+        public static void Main(string[] args)
+        {
+            int dailySaving = 50;
+            int targetAmount = 200;
+
+            CalculateSavings(dailySaving, targetAmount);
+        }
+    }
+}
